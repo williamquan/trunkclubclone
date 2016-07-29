@@ -1,0 +1,464 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	width: 768px;
+	height: 60px;
+	top: 0;
+	position: fixed;
+	text-align: center;
+	/* Adds shadow to the bottom of the bar */
+	-webkit-box-shadow: 0px 0px 8px 0px #000000;
+	-moz-box-shadow: 0px 0px 8px 0px #000000;
+	box-shadow: 0px 0px 8px 0px #000000;
+	/* Adds the transparent background */
+	background-color: rgba(1, 1, 1, 0.8);
+	color: rgba(1, 1, 1, 0.8);
+	z-index: 100;
+}
+
+header p {
+	color: white;
+	font-family: 'Roboto Slab', sans-serif;
+	font-size: 1.7em;
+	text-transform: uppercase;
+	font-weight: bold;
+	float: left;
+	padding-left: 65px;
+	padding-top: 10px;
+	position: relative;
+}
+
+header nav {
+	float: right;
+	padding-top: 20px;
+	padding-right: 20px;
+	margin-right: 0px;
+}
+
+header nav a {
+	color: darkgrey;
+	text-decoration: none;
+	font-family: arial;
+	font-size: 0.4em;
+	text-transform: uppercase;
+	padding-top: 15px;
+	padding-right: 20px;
+}
+
+header nav a:nth-child(4) {
+	border-left: 2px solid gray;
+	padding: 10px 15px 10px 15px;
+}
+
+header nav a:nth-child(5) {
+	padding: 10px 20px 10px 20px;
+	margin-top: 25px;
+	border: 2px solid gray;
+}
+
+main {
+	width: 768px;
+	height: 660px;
+	background-image: url(clothing.jpg);
+	background-position: 15% 50%;
+	background-size: cover;
+	margin-top: 60px;
+}
+
+main p {
+	color: white;
+	font-family: Helvetica,sans-serif;;
+	font-size: 3.6em;
+	padding: 140px 0px 0px 175px;
+	display: inline-block;
+	width: 490px;
+	text-align: center;
+}
+
+main p + p {
+	font-family: proxima nova;
+	font-style: italic;
+	font-size: 1.3em;
+	padding: 25px 0px 10px 65px;
+	display: block;
+	margin-bottom: 50px;
+	width: 680px;
+	line-height: 150%;
+}
+
+main a {
+	color: white;
+	text-decoration: none;
+	padding: 15px 55px 15px 55px;
+	border: 2px solid white;
+	margin-left: 310px;
+}
+
+main a:hover {
+	color: black;
+	background: white;
+}
+
+#package_info {
+	display: block;
+	width: 768px;
+	height: 1153px;
+}
+
+#package_info h2 {
+	font-family: Helvetica,sans-serif;;
+	font-size: 1.8em;
+	font-weight: bold;
+	padding-left: 315px;
+	padding-bottom: 40px;
+	padding-top: 120px;
+}
+
+#package_info h2::after {
+	content: '  ';
+	display: block;
+    width: 45px;
+    border-bottom: 2px solid pink;
+    padding-top: 20px;
+    margin-left: 60px;
+}
+
+#package_info ul {
+	display: block;
+}
+
+
+#package_info ul li {
+	font-family: proxima nova;
+	color: grey;
+	display: inline-block;
+	list-style-type: none;
+	padding-left: 220px;
+	text-align: center;
+	line-height: 150%;
+}
+
+#package_info ul li:nth-child(2) {
+	padding-left: 225px;
+}
+
+#package_info ul li:nth-child(3) {
+	padding-left: 225px;
+	padding-bottom: 50px;
+}
+
+#package_info ul li img {
+	display: block;
+	margin-left: 150px;
+	margin-bottom: 25px;
+}
+
+.package_steps {
+	font-weight: bold;
+	display: block;
+	font-family: arial;
+	font-size: 1.2em;
+	color: black;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#grey_text {
+	display: block;
+	color: lightgrey;
+	font-size: 1.0em;
+	padding-left: 80px;
+}
+
+.info {
+	width: 355px;
+	height: 250px;
+	float: left;
+}
+
+#example_trunks {
+	background: #2A2C31;
+	width: 1280px;
+	height: 1160px;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+#example_trunks h1 {
+	font-size: 2.1em;
+	padding-top: 30px;
+	margin-bottom: 20px;
+	font-weight: normal;
+	padding-left: 200px;
+}
+
+#example_trunks p.desc_of_exp {
+	width: 500px;
+	text-align: center;
+	padding-left: 75px;
+	line-height: 150%;
+	font-style: italic;
+	font-size: 1.0em;
+	font-family: Georgia Serif;
+	padding-bottom: 40px;
+}
+
+#stylist {
+	width: 300px;
+	margin-top: 25px;
+	padding-bottom: 15px;
+	margin-bottom: 80px;
+}
+
+#stylist_left_info {
+	float: left;
+	visibility: hidden;
+}
+
+#stylist_right_info {
+	width: 200px;
+	float: right;
+	margin-right: 35px;
+}
+
+#example_trunks h2 {
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 1.1em;
+	font-family: "Sentinel SSm A","Sentinel SSm B",serif;
+	padding-bottom: 10px;
+	visibility: hidden;
+}
+
+#example_trunks h3 {
+	color: orange;
+	font-weight: normal;
+	font-size: 0.9em;
+	font-family: "Sentinel SSm A","Sentinel SSm B",serif;
+	visibility:hidden;
+}
+
+.package_contents {
+	color: white;
+	font-size: 1.2em;
+	margin-right: 40px;
+	list-style-type: none;
+	display: inline;
+}
+
+#trunk_package {
+	border-top: 1px solid grey;
+	padding-top: 10px;
+	margin-top: 30px;
+	width: 450px;
+	padding-left: 170px;
+}
+
+#left_content ul {
+	padding-left: 0px;
+	padding-top: 10px;
+}
+
+.package_contents li:nth-child(4) {
+	margin-right: none;
+}
+
+#trunk_package ul li.package_contents:nth-child(2)  {
+	padding-left: 30px;
+}
+
+#trunk_package ul li.package_contents:nth-child(3)  {
+	padding-left: 20px;
+}
+
+#trunk_package ul li.package_contents:nth-child(4)  {
+	padding-left: 10px;
+}
+
+.package_desc {
+	color: grey;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	list-style-type: none;
+	display: inline;
+	padding-right: 10px;
+}
+
+#left_content {
+	width: 350px;
+	float: left;
+	margin-left: 70px;
+	color: white;
+	font-family: arial;
+	padding-bottom: 140px;
+}
+
+#scrolling_image {
+	width: 400px;
+	display: block;
+	padding-left: 40px;
+	margin-right: 300px;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+#scrolling_image img {
+	width: 650px;
+	height: 450px;
+}
+
+#employee_personal_message {
+	width: 768px;
+	display: inline-block;
+	height: 660px;
+}
+
+#left_image {
+	background-image: url(stylist.jpg);
+	background-size: cover;
+	width: 380px;
+	height: 660px;
+	background-position: 50% 10%;
+	float: left;
+}
+
+#right_message {
+	float: right;
+	width: 350px;
+	padding-top: 200px;
+}
+
+h1 {
+	font-size: 1.5em;
+	font-weight: bold;
+	font-family: LLAkkuratWeb-Bold,HelveticaNeue,Helvetica,sans-serif;
+	width: 255px;
+	padding-left: 50px;
+	text-align: center;
+}
+
+#right_message h1::after {
+	content: '  ';
+	width: 45px;
+	border-bottom: 2px solid pink;
+	display: block;
+	padding-top: 20px;
+	margin-left: 85px;
+}
+
+blockquote {
+	padding: 0;
+	padding-top: 25px;
+	padding-left: 50px;
+	padding-bottom: 25px;
+	width: 250px ;
+	margin: 0;
+	color: grey;
+	font-size: 1.0em;
+	font-style: italic;
+	font-family: ff-tisa-web-pro,Georgia,serif;
+	line-height: 150%;
+}
+
+#employee_personal_message p strong {
+	display: block;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-family: LLAkkuratWeb-Bold,HelveticaNeue,Helvetica,sans-serif;
+	padding-bottom: 10px;
+	padding-left: 80px;
+}
+
+#employee_personal_message p em {
+	font-style: normal;
+	color: darkgrey;
+	font-size: 0.9em;
+	font-weight: bold;
+	font-family: LLAkkuratWeb-Bold,HelveticaNeue,Helvetica,sans-serif;
+	padding-left: 69px;
+}
+
+#get_started {
+	padding-left: 40px;
+	text-align: center;
+	height: 560px;
+}
+
+#get_started p.star {
+	color: lightgrey;
+	font-size: 1.5em;
+	padding-top: 45px;
+	padding-bottom: 35px;
+	padding-right: 70px;
+	padding-left: 35px;
+}
+
+#get_started h1 {
+	padding-bottom: 20px;
+	font-size: 1.6em;
+	font-family: LLAkkuratWeb-Bold,HelveticaNeue,Helvetica,sans-serif;
+	padding-left: 215px;
+}
+
+#get_started p.desc {
+	color: grey;
+	font-size: 1.1em;
+	padding-bottom: 25px;
+	width: 375px;
+	padding-left: 155px;
+	margin-bottom: 25px;
+	font-family: "Sentinel SSm A","Sentinel SSm B",serif;
+}
+
+#get_started a {
+	font-size: 1.5em;
+	font-family: arial;
+	text-decoration: none;
+	border: 2px solid black;
+	color: black;
+	background: white;
+	padding: 20px 235px 20px 235px;
+	margin-right: 45px;
+}
+
+#get_started a:hover {
+	color: white;
+	background: black;
+}
+
+footer {
+	background: black;
+	height: 230px;
+}
+
+footer nav {
+	padding-top: 55px;
+	padding-left: 125px;
+	border-bottom: 1px solid grey;
+	padding-bottom: 25px;
+	display: block;
+}
+
+footer nav a {
+	text-decoration: none;
+	color: white;
+	font-family: arial;
+	padding-right: 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 0.7em;
+}
+
+#social-media-links {
+	display: block;
+	padding-left: 250px;
+	padding-top: 35px;
+	padding-right: 10px;
+}
+
+#social-media-links a {
+	padding-right: 5px;
+}
